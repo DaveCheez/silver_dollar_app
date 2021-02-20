@@ -29,7 +29,7 @@ git config --global core.autocrlf input
 cd /var/repo/"$projectgit"/
 git clone git@github.com:DaveCheez/DjangoBoiler.git . --bare
 git --work-tree="/var/www/$projectslug" --git-dir="/var/repo/$projectgit" checkout -f
-virtualenv -p python3.6 /var/www/"$projectslug"
+virtualenv -p python3.8 /var/www/"$projectslug"
 cd /var/www/"$projectslug"/
 
 "$virtualenvbin"/python3 -m pip install -r /var/www/"$projectslug"/requirements.txt
