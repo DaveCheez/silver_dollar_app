@@ -19,21 +19,6 @@ sudo rm -f /var/www/${projectslug}/src/cfehome/
 virtualenvbin="/var/www/${projectslug}/bin"
 $virtualenvbin/python -m pip install -r "/var/www/${projectslug}/src/requirements.txt"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if true
 then
     git clone https://github.com/FusionArc/DjangoBoiler.git . --bare
